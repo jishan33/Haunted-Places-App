@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user, only: [:create, :update, :destroy]
   before_action :set_post, only: [:show, :update, :destroy]
 
   def index
@@ -11,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.create(post_params)
+    post = current_user.posts.create(post_params)
     render json: post, status: 200
   end
 
