@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:country, :location, :time, :haunted_level, :description, :image)
+    params.require(:post).permit(:country, :location, :time, :haunted_level, :description, :image, :continent)
   end
 
   def set_post

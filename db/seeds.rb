@@ -1,18 +1,19 @@
-
 user_1 = User.create(email: "test1@g.com", password: "test123" )
 user_2 = User.create(email: "test2@g.com", password: "test123" )
 
+Post.create(country: 'Australia', continent: 'Oceania', location: 'Tasmania Port Arthur Historic Site',  haunted_level: 1, description: 'It’s been more than 140 years since the Port Arthur penal colony shut after 44 years of brutal slavery and punishment of the ‘worst of the worst’ sent from the motherland, some as young as 10 years old. Most were hardened criminals, others insane or just unlucky. Some made it out. Hundreds did not.',  image: 'https://www.abc.net.au/cm/rimage/11350636-16x9-xlarge.jpg?v=2', user_id: user_1.id  )
 
+Post.create(country: 'Taiwan', continent: 'Asia', location: 'Grand Hyatt Taipei',  haunted_level: 9, description: 'While lavish and beautiful now, it’s said that the land that the hotel has been built on has witnessed a much more brutal past: It was allegedly a prisoner camp during the era of World War 2 where many cruel executions took place.',  image: 'https://www.8days.sg/image/10143492/16x9/1920/1080/40ea96d85195b04c7e13894687466e7a/jj/haunted-hyatt-taipei.jpg', user_id: user_2.id    )
 
+Post.create(country: 'Malaysia', continent: 'Asia', location: 'Genting Highlands',  haunted_level: 8, description: 'First World Hotel currently holds the Guinness World Record of being the largest hotel in the world (based on the number of rooms), with a whopping 7,351 rooms. Rumour has it that many of these rooms are now permanently vacant to appease some of the less-friendly guests of the hotel.',  image: 'https://www.any5354.com/wp-content/uploads/2019/12/genting-highland-amber-court-scaled.jpg', user_id: user_2.id    )
 
+Post.create(country: 'Estonia', continent: 'Europe', location: 'Viivikonna',  haunted_level: 4, description: 'Estonia is replete with haunted places, and one of the eeriest is Viivikonna, a literal ghost town with fewer than 100 inhabitants. Situated in northeastern Estonia, Viivikonna was a mining town during the Soviet occupation and was built primarily by German POWs after World War II.',  image: 'https://i0.wp.com/filmestonia.eu/wp-content/uploads/2018/12/d1za4oss.q4z-1.jpg', user_id: user_1.id    )
 
+Post.create(country: 'Australia', continent: 'Oceania', location: 'Young & Jackson',  haunted_level: 2, description: 'In the late 19th century, it’s reported that several prostitutes were murdered near Young & Jackson, which is one of Melbourne’s oldest pubs. Unfortunately, their deaths were rarely noticed by authorities at the time. Since then, men have reported seeing a ghost hanging outside the pub, which people believe belongs to one of these prostitutes. One report says that although she appears as a beautiful woman, when you look closer you can see her throat has been slit.',  image: 'https://amyscrypt.com/wp-content/uploads/2019/07/Jackson-and-Young-Haunted-Melbourne-4-1024x682.jpg', user_id: user_1.id    )
 
+Post.create(country: 'New Zealand', continent: 'Oceanic', location: 'Ghost Town',  haunted_level: 1, description: 'Signs to the town of Tangarakau say: Ghost Town, accompanied by goat skins slung on either side. Should you dare to turn into the town on this secluded section of the Forgotten World Highway in the North Island, you will be met with a campground surrounded by rolling hills and a working farm. Things have changed since the tunnelling and railway days where 1200 people used to live here… Now, well, it’s a ghost town.',  image: 'https://nzpocketguide.com/wp-content/uploads/2019/10/Spooky-places-in-new-zealand-Tangarakau-Ghost-town_optimized.jpg', user_id: user_2.id    )
 
+Post.create(country: 'England', continent: 'Europe', location: 'Berry Pomeroy castle',  haunted_level: 3, description: 'The Most Haunted Castle in Britain',  image: 'https://www.kayak.co.uk/magazine/wp-content/uploads/sites/78/2017/09/Haunted-UK-St-Berry-Pomeroy-800x500.jpg', user_id: user_1.id    )
 
-
-Post.create(country: 'Australia', location: 'tasmania port arthur prison',  haunted_level: 1, description: 'creepy ',  image: 'https://www.abc.net.au/cm/rimage/11350636-16x9-xlarge.jpg?v=2', user_id: user_1.id  )
-
-
-Post.create(country: 'Taiwan', location: 'Grand Hyatt Taipei',  haunted_level: 4, description: 'scary ',  image: 'https://www.8days.sg/image/10143492/16x9/1920/1080/40ea96d85195b04c7e13894687466e7a/jj/haunted-hyatt-taipei.jpg', user_id: user_2.id    )
 
 
