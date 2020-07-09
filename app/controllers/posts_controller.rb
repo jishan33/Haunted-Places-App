@@ -11,13 +11,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    render json: "post created", status: 200
+    post = Post.create(post_params)
+    render json: post, status: 200
   end
 
   def update
     @post.update(post_params)
-    render json: "post updated", status: 200
+    render json: "Post updated", status: 200
   end
 
   def destroy
