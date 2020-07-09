@@ -1,14 +1,5 @@
-
 user_1 = User.create(email: "test1@g.com", password: "test123" )
 user_2 = User.create(email: "test2@g.com", password: "test123" )
-
-
-
-
-
-
-
-
 
 Post.create(country: 'Australia', location: 'tasmania port arthur prison',  haunted_level: 1, description: 'creepy ',  image: 'https://www.abc.net.au/cm/rimage/11350636-16x9-xlarge.jpg?v=2', user_id: user_1.id  )
 
